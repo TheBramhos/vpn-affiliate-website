@@ -1,0 +1,487 @@
+<!doctype html>
+<html lang="fi">
+
+<!-- /fi/mika-vpn-on-aloittelijan-opas/ by /3.x [XR&CO'2014], Sun, 12 Sep 2021 12:13:35 GMT -->
+<!--  --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- / -->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="icon" href="/favicon.ico">
+<title>Mikä VPN on? Aloittelijan opas</title>
+
+
+
+
+
+<link rel="stylesheet" type="text/css" href="/wp-content/cache/wpfc-minified/87be9srm/4lvp8.css" media="all" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" rel="stylesheet">
+<meta name='robots' content='max-image-preview:large' />
+<link rel="alternate" hreflang="en" href="/what-is-vpn/" />
+<link rel="alternate" hreflang="nb-no" href="/no/hva-er-vpn/" />
+<link rel="alternate" hreflang="da" href="/da/hvad-er-vpn/" />
+<link rel="alternate" hreflang="sv" href="/sv/vad-ar-vpn/" />
+<link rel="alternate" hreflang="fi" href="/fi/mika-vpn-on-aloittelijan-opas/" />
+<link rel="alternate" hreflang="de" href="/de/was-ist-vpn/" />
+<link rel="alternate" hreflang="ja" href="/ja/vpnとは/" />
+
+<meta name="description" content="Osa tietokoneisiin liittyvistä teknisistä ilmaisuista on todella abstrakteja. Näin ei ole kuitenkaan VPN-ohjelmisojen kohdalla. Selitämme VPN-palvelun käyttötarkoituksen." />
+<meta property="og:image" content="/wp-content/uploads/2019/02/VPN-beginner.jpg" />
+<meta property="og:image:width" content="1000" />
+<meta property="og:image:height" content="562" />
+<meta property="og:locale" content="fi_FI" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Mikä VPN on? Aloittelijan opas" />
+<meta property="og:description" content="Osa tietokoneisiin liittyvistä teknisistä ilmaisuista on todella abstrakteja. Näin ei ole kuitenkaan VPN-ohjelmisojen kohdalla. Selitämme VPN-palvelun käyttötarkoituksen." />
+<meta property="og:url" content="/fi/mika-vpn-on-aloittelijan-opas/" />
+<meta property="og:site_name" content="vpnexpert.org" />
+<meta property="article:published_time" content="2019-07-11T13:53+00:00" />
+<meta property="article:modified_time" content="2019-11-04T16:18+00:00" />
+<meta property="og:updated_time" content="2019-11-04T16:18+00:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Mikä VPN on? Aloittelijan opas" />
+<meta name="twitter:description" content="Osa tietokoneisiin liittyvistä teknisistä ilmaisuista on todella abstrakteja. Näin ei ole kuitenkaan VPN-ohjelmisojen kohdalla. Selitämme VPN-palvelun käyttötarkoituksen." />
+<meta name="twitter:image" content="/wp-content/uploads/2019/02/VPN-beginner.jpg" />
+<meta name="twitter:image:width" content="1000" />
+<meta name="twitter:image:height" content="562" />
+<link rel="canonical" href="/fi/mika-vpn-on-aloittelijan-opas/" />
+
+
+
+<link rel="stylesheet" type="text/css" href="/wp-content/cache/wpfc-minified/879yd7do/4lvp8.css" media="all" />
+<style id='wpml-legacy-dropdown-0-inline-css' type='text/css'>
+.wpml-ls-statics-shortcode_actions{background-color:#ffffff;}.wpml-ls-statics-shortcode_actions, .wpml-ls-statics-shortcode_actions .wpml-ls-sub-menu, .wpml-ls-statics-shortcode_actions a {border-color:#3685ff;}.wpml-ls-statics-shortcode_actions a {color:#444444;background-color:#ffffff;}.wpml-ls-statics-shortcode_actions a:hover,.wpml-ls-statics-shortcode_actions a:focus {color:#000000;background-color:#ffffff;}.wpml-ls-statics-shortcode_actions .wpml-ls-current-language>a {color:#0056b3;background-color:#ffffff;}.wpml-ls-statics-shortcode_actions .wpml-ls-current-language:hover>a, .wpml-ls-statics-shortcode_actions .wpml-ls-current-language>a:focus {color:#0056b3;background-color:#ffffff;}
+</style>
+
+<link rel="stylesheet" type="text/css" href="/wp-content/cache/wpfc-minified/76tkzhr4/4lvp8.css" media="all" />
+<style id='wpml-menu-item-0-inline-css' type='text/css'>
+.wpml-ls-slot-6, .wpml-ls-slot-6 a, .wpml-ls-slot-6 a:visited{background-color:#ffffff;color:#444444;}.wpml-ls-slot-6:hover, .wpml-ls-slot-6:hover a, .wpml-ls-slot-6 a:hover{color:#000000;background-color:#eeeeee;}.wpml-ls-slot-6.wpml-ls-current-language, .wpml-ls-slot-6.wpml-ls-current-language a, .wpml-ls-slot-6.wpml-ls-current-language a:visited{color:#444444;background-color:#ffffff;}.wpml-ls-slot-6.wpml-ls-current-language:hover, .wpml-ls-slot-6.wpml-ls-current-language:hover a, .wpml-ls-slot-6.wpml-ls-current-language a:hover{color:#000000;background-color:#eeeeee;}.wpml-ls-slot-6.wpml-ls-current-language .wpml-ls-slot-6, .wpml-ls-slot-6.wpml-ls-current-language .wpml-ls-slot-6 a, .wpml-ls-slot-6.wpml-ls-current-language .wpml-ls-slot-6 a:visited{background-color:#ffffff;color:#444444;}.wpml-ls-slot-6.wpml-ls-current-language .wpml-ls-slot-6:hover, .wpml-ls-slot-6.wpml-ls-current-language .wpml-ls-slot-6:hover a, .wpml-ls-slot-6.wpml-ls-current-language .wpml-ls-slot-6 a:hover {color:#000000;background-color:#eeeeee;}
+</style>
+<script src='/wp-content/cache/wpfc-minified/jqlzqpta/4lvp8.js' type="text/javascript"></script>
+
+<meta name="generator" content="WPML ver:4.4.10 stt:12,1,18,3,28,38,40,50;" />
+
+
+
+
+<script type="application/ld+json" class="saswp-schema-markup-output">
+[{"@context":"https:\/\/schema.org","@graph":[{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","@id":"https:\/\/vpnexpert.org\/fi\/#Top Nav","name":"Best VPN 2021","url":"https:\/\/vpnexpert.org\/best-vpn\/"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","@id":"https:\/\/vpnexpert.org\/fi\/#Top Nav","name":"Netflix USA","url":"https:\/\/vpnexpert.org\/netflix-usa\/"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","@id":"https:\/\/vpnexpert.org\/fi\/#Top Nav","name":"Hulu VPN","url":"https:\/\/vpnexpert.org\/hulu-vpn\/"}]},
+{"@context":"https:\/\/schema.org","@type":"SoftwareApplication","@id":"https:\/\/vpnexpert.org\/fi\/mika-vpn-on-aloittelijan-opas\/#SoftwareApplication","datePublished":"2019-07-11T13:53:02+00:00","dateModified":"2019-11-04T16:18:14+00:00","author":{"@type":"Person","name":"Kasper Skov Jensen","description":"","url":"https:\/\/vpnexpert.org\/fi\/author\/ksjcompriso-com\/","sameAs":["kasper_s_jensen","kaspersjensen"],"image":{"@type":"ImageObject","url":"https:\/\/secure.gravatar.com\/avatar\/7aedae79aa7842b78367d4312b0504f1?s=96&d=mm&r=g","height":96,"width":96}},"publisher":{"@type":"Organization","name":"vpnexpert.org","url":"https:\/\/vpnexpert.org","logo":{"@type":"ImageObject","url":"https:\/\/vpnexpert.org\/wp-content\/uploads\/2019\/09\/cropped-vpnxpertfavicon.png","width":"512","height":"512"}},"image":[{"@type":"ImageObject","@id":"https:\/\/vpnexpert.org\/fi\/mika-vpn-on-aloittelijan-opas\/#primaryimage","url":"https:\/\/vpnexpert.org\/wp-content\/uploads\/2019\/02\/VPN-beginner-1200x900.jpg","width":"1200","height":"900"},{"@type":"ImageObject","url":"https:\/\/vpnexpert.org\/wp-content\/uploads\/2019\/02\/VPN-beginner-1200x720.jpg","width":"1200","height":"720"},{"@type":"ImageObject","url":"https:\/\/vpnexpert.org\/wp-content\/uploads\/2019\/02\/VPN-beginner-1200x675.jpg","width":"1200","height":"675"}]},
+{"@context":"https:\/\/schema.org","@type":"Article","@id":"https:\/\/vpnexpert.org\/fi\/mika-vpn-on-aloittelijan-opas\/#Article","url":"https:\/\/vpnexpert.org\/fi\/mika-vpn-on-aloittelijan-opas\/","inLanguage":"fi","mainEntityOfPage":"https:\/\/vpnexpert.org\/fi\/mika-vpn-on-aloittelijan-opas\/","headline":"Mik\u00e4 VPN on? Aloittelijan opas","description":"Osa tietokoneisiin liittyvist\u00e4 teknisist\u00e4 ilmaisuista on todella abstrakteja. N\u00e4in ei ole kuitenkaan VPN-ohjelmisojen kohdalla. Selit\u00e4mme VPN-palvelun k\u00e4ytt\u00f6tarkoituksen.","articleBody":"Osa tietokoneisiin liittyvist\u00e4 teknisist\u00e4 ilmaisuista on todella abstrakteja. N\u00e4in ei ole kuitenkaan VPN-ohjelmistojen kohdalla. Selit\u00e4mme VPN-palvelun k\u00e4ytt\u00f6tarkoituksen.              Internet on laaja verkko toisiinsa kytk\u00f6ksiss\u00e4 olevia tietokonepalvelimia. VPN on lyhenne sanoista virtual private network tai virtuaalinen erillisverkko ja, p\u00e4invastoin kuin kotiverkkosi, se l\u00f6ytyy internetist\u00e4. Siit\u00e4 tulee sana virtuaalinen. Se on erillinen tai yksityinen, koska vain sin\u00e4 p\u00e4\u00e4set siihen.     Kuka tahansa voi n\u00e4hd\u00e4 IP-osoitteesi     Kaikilla internetiin liitetyill\u00e4 laitteilla (k\u00e4nnyk\u00f6ill\u00e4, tietokoneilla, tableteilla jne.) on IP-osoite. Se on tavallaan internet-palveluntarjoajasi (ISP) antama  henkil\u00f6llisyystunnus laitteellesi.     Aivan samoin kuin sosiaaliturvanumeroa k\u00e4ytet\u00e4\u00e4n monissa yhteyksiss\u00e4, my\u00f6s laitteen IP-osoite tallentuu nettiin, teetp\u00e4 siell\u00e4 melkein mit\u00e4 hyv\u00e4ns\u00e4. Niin tapahtuu esimerkiksi joka kerta vieraillessasi jollakin nettisivulla.     Siksi palveluntarjoajasi p\u00e4\u00e4see katsomaan, mill\u00e4 sivustoilla olet k\u00e4ynyt \u2013 ja milloin olet niill\u00e4 vieraillut.     Internet ei koskaan unohda     Teet itsellesi palveluksen pit\u00e4m\u00e4ll\u00e4 mieless\u00e4, ettei internet unohda koskaan. Kun jokin asia tallennetaan jollekin palvelimelle jossain p\u00e4in maailmaa, sit\u00e4 voi olla mahdotonta poistaa t\u00e4ydellisesti \u2013 ja varmistaa, ett\u00e4 se on poistettu.     Sama koskee IP-osoitettasi ja sen avulla tallennettua tietoa. Niin ISP-palveluntarjoajasi, viranomaiset kuin muutkin pystyv\u00e4t seuraamaan oikeastaan kaikkia j\u00e4lki\u00e4, joita j\u00e4t\u00e4t internetiin.     On olemassa s\u00e4\u00e4nt\u00f6j\u00e4 liittyen siihen, kuinka kauan joitakin tietoja saa s\u00e4ilytt\u00e4\u00e4, mutta k\u00e4yt\u00e4nn\u00f6ss\u00e4 on mahdotonta tarkistaa, noudatetaanko niit\u00e4     Et ole ruudun takana turvassa     Periaatteessa kaikki internetliikenne on salaamatonta. Se tarkoittaa, ett\u00e4 hakkerit ja muut voivat mahdollisesti saada k\u00e4siins\u00e4 tietoja, joita siirret\u00e4\u00e4n palvelimien ja laitteesi v\u00e4lill\u00e4.  Sinun tietojesi ja ep\u00e4rehellisten ihmisten v\u00e4lill\u00e4 ei ehk\u00e4 ole palomuuria.     VPN tarjoaa turvaa ja anonymiteetti\u00e4     VPN-yhteys luo ylim\u00e4\u00e4r\u00e4isen suojakerroksen laitteesi ja internetin v\u00e4liin. Sen sijaan, ett\u00e4 laitteesi IP-osoite tallentuisi jonnekin, tallentuukin IP-osoite silt\u00e4 VPN-palvelimelta, johon olet yhteydess\u00e4. Se tarkoittaa, ett\u00e4 kukaan ei voi seurata internetin k\u00e4ytt\u00f6\u00e4si, koska sit\u00e4 ei voida j\u00e4ljitt\u00e4\u00e4 sinuun.     Lis\u00e4ksi tiedonv\u00e4litys on aina turvallista, sill\u00e4 tiedot salakoodataan VPN-palvelimen ja internetin v\u00e4lill\u00e4. Siten esimerkiksi hakkerit eiv\u00e4t p\u00e4\u00e4se niihin k\u00e4siksi. Lopuksi, VPN-palvelun avulla et my\u00f6sk\u00e4\u00e4n ole sidottu maantieteellisiin rajoituksiin. Jos esimerkiksi olet liittyneen\u00e4 palvelimeen Yhdysvalloissa, loput internetist\u00e4 n\u00e4ytt\u00e4\u00e4 my\u00f6s sijaitsevan fyysisesti USA:ssa.     Nyt kun tied\u00e4t hieman siit\u00e4, kuinka VPN toimii, kuinka se suojaa sinua ja yksityisyytt\u00e4si, voimme paneutua enemm\u00e4n siihen, kuka oikeasti pystyy n\u00e4kem\u00e4\u00e4n, mit\u00e4 teet netiss\u00e4. T\u00e4m\u00e4 vaihtelee eri maissa \u2013 ja sanotaan vaikka n\u00e4in: Eurooppa ei suojaa yksityisyytt\u00e4si t\u00e4ss\u00e4 yhteydess\u00e4.     Montako silm\u00e4\u00e4 tarkkailee?     Tyypillisesti maat voidaan jakaa  kolmeen ryhm\u00e4\u00e4n: 5 silm\u00e4\u00e4, 9 silm\u00e4\u00e4 14 silm\u00e4\u00e4 sen mukaan, montako maata kuhunkin ryhm\u00e4\u00e4n kuuluu, ja samalla monenko silm\u00e4n kanssa tiedot internet-k\u00e4ytt\u00e4ytymisest\u00e4 jaetaan.     5 silm\u00e4\u00e4    Viidell\u00e4 maalla, joihin kuuluvat USA, Iso-Britannia, Kanada, Uusi-Seelanti ja Australia,  on kattavin tiedonsiirtosopimus. Kyse ei ole vain siit\u00e4, kuka katselee pommivideoita ja ostaa suuria m\u00e4\u00e4ri\u00e4 lannoitteita, vaan my\u00f6s normaalista internetin arkik\u00e4yt\u00f6st\u00e4.     N\u00e4iden viiden maan viranomaisilla on laajat rakenteet valvontaa varten ja ne voivat esimerkiksi pyyt\u00e4\u00e4 toisten ryhm\u00e4\u00e4n kuuluvien maitten tiedustelupalveluita vakoilemaan nime\u00e4mi\u00e4\u00e4n kansalaisia.      9 silm\u00e4\u00e4    Tanska, Ranska, Alankomaat ja Norja ty\u00f6skentelev\u00e4t l\u00e4heisess\u00e4 tiedonjakoyhteydess\u00e4 n\u00e4iden viiden maan kanssa. N\u00e4in voimme puhua yhdeks\u00e4st\u00e4 silm\u00e4st\u00e4.      14 silm\u00e4\u00e4    Valvonta ei kuitenkaan p\u00e4\u00e4ty t\u00e4h\u00e4n. N\u00e4iden yhdeks\u00e4n maan lis\u00e4ksi viel\u00e4 viisi maata lis\u00e4\u00e4 tekee yhteisty\u00f6t\u00e4 muiden kanssa jakaakseen etup\u00e4\u00e4ss\u00e4 asevoimiin liittyv\u00e4\u00e4 tietoa. Ne ovat Ruotsi, Saksa, Belgia, Italia ja Espanja. N\u00e4in saamme kokoon 14 maata, jotka jakavat tietoja rajojensa ylitse.     Vahva vai kevyt yksityisyyssuoja     Yll\u00e4 oleva katsaus valottaa v\u00e4h\u00e4n sit\u00e4, kuinka monen maan kanssa tietosi voidaan jakaa, ellet k\u00e4yt\u00e4 VPN-palvelinta. Mutta se paljastaa my\u00f6s jotain hyvin t\u00e4rke\u00e4\u00e4 VPN-palveluntarjoajan valinnasta. Jos sinun on pysytt\u00e4v\u00e4 todella anonyymin\u00e4, palveluntarjoaja ei saa tallentaa tai paljastaa sinua koskevia tietoja.     Kuten tied\u00e4t, yrityksi\u00e4 sitovat sen maan lait, joihin ne on rekister\u00f6ity \u2013 ja yksityisyytt\u00e4 koskevat s\u00e4\u00e4nn\u00f6t vaihtelevat todella paljon. Jos esimerkiksi valitset yhdysvaltalaisen VPN-palveluntarjoajan, et voi pysy\u00e4 nimett\u00f6m\u00e4n\u00e4, koska lain mukaan yrityksen on tallennettava sinusta tietoja ja mahdollisesti annettava sinusta paljon tietoja.     Toisaalta, jos valitset VPN-palveluntarjoajan sellaisesta maasta, jossa laki takaa, ettei mit\u00e4\u00e4n lokikirjoja tallenneta viranomaisten tai muitten nuuskittaviksi, voit nukkua y\u00f6si rauhassa ja anonyymisti.      Mik\u00e4 VPN on oikea juuri sinulle? Ota selv\u00e4\u00e4 asiasta t\u00e4\u00e4lt\u00e4     Sis\u00e4lt\u00f6\u00e4 ilman rajoja      VPN-palvelun avulla voit ohittaa maantieteelliset rajoitukset. N\u00e4ytt\u00e4\u00e4 silt\u00e4 kuin olisit samassa maassa kuin se VPN-palvelin, johon olet liittyneen\u00e4. Niinp\u00e4 k\u00e4yt\u00f6ss\u00e4si on vaikkapa Amerikan Netflixin, jos yhdist\u00e4t palvelimeen USA:ssa tai BBC iPlayer yhdist\u00e4ess\u00e4si brittil\u00e4iseen palvelimeen jne.","keywords":"","datePublished":"2019-07-11T13:53:02+00:00","dateModified":"2019-11-04T16:18:14+00:00","author":{"@type":"Person","name":"Kasper Skov Jensen","description":"","url":"https:\/\/vpnexpert.org\/fi\/author\/ksjcompriso-com\/","sameAs":["kasper_s_jensen","kaspersjensen"],"image":{"@type":"ImageObject","url":"https:\/\/secure.gravatar.com\/avatar\/7aedae79aa7842b78367d4312b0504f1?s=96&d=mm&r=g","height":96,"width":96}},"editor":{"@type":"Person","name":"Kasper Skov Jensen","description":"","url":"https:\/\/vpnexpert.org\/fi\/author\/ksjcompriso-com\/","sameAs":["kasper_s_jensen","kaspersjensen"],"image":{"@type":"ImageObject","url":"https:\/\/secure.gravatar.com\/avatar\/7aedae79aa7842b78367d4312b0504f1?s=96&d=mm&r=g","height":96,"width":96}},"publisher":{"@type":"Organization","name":"vpnexpert.org","url":"https:\/\/vpnexpert.org","logo":{"@type":"ImageObject","url":"https:\/\/vpnexpert.org\/wp-content\/uploads\/2019\/09\/cropped-vpnxpertfavicon.png","width":"512","height":"512"}},"image":[{"@type":"ImageObject","@id":"https:\/\/vpnexpert.org\/fi\/mika-vpn-on-aloittelijan-opas\/#primaryimage","url":"https:\/\/vpnexpert.org\/wp-content\/uploads\/2019\/02\/VPN-beginner-1200x900.jpg","width":"1200","height":"900"},{"@type":"ImageObject","url":"https:\/\/vpnexpert.org\/wp-content\/uploads\/2019\/02\/VPN-beginner-1200x720.jpg","width":"1200","height":"720"},{"@type":"ImageObject","url":"https:\/\/vpnexpert.org\/wp-content\/uploads\/2019\/02\/VPN-beginner-1200x675.jpg","width":"1200","height":"675"}]}]
+</script>
+<link rel="icon" href="/wp-content/uploads/2019/09/cropped-vpnxpertfavicon-32x32.png" sizes="32x32" />
+<link rel="icon" href="/wp-content/uploads/2019/09/cropped-vpnxpertfavicon-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="/wp-content/uploads/2019/09/cropped-vpnxpertfavicon-180x180.png" />
+
+<style type="text/css" id="wp-custom-css">
+.wpml-ls-legacy-dropdown { width: 100% }
+.btn-visit-site {
+background-color: #5ed235;
+border: none;
+}
+.url-addr {
+display: none;
+}
+.header-content {
+padding-top: 40px !important;
+}
+.ill-client {
+padding-right: 120px;
+}
+.comparison-table {
+top: -80px;
+}
+.saswp-faq-block-section {
+font-size: 22px;
+}
+.wp-block-image img {
+max-width: 100%;
+height: auto;
+}
+.section-row h2 {
+margin-bottom: 15px;
+font-size: 22px;
+}
+.section-row h3 {
+margin-bottom: 15px;
+font-size: 18px;
+}
+.wp-block-button {
+margin-top: 20px;
+}
+.section-row h2 {
+max-width:100%;
+}
+@media only screen and (max-width: 675px) {
+}
+</style>
+</head>
+<body class="post-template-default single single-post postid-1430 single-format-standard wp-custom-logo">
+
+
+
+<nav class="navbar navbar-expand-lg">
+<button class="navbar-toggler search-toggler" type="button" data-toggle="collapse" data-target="#navsearch" aria-controls="navsearch" aria-expanded="false" aria-label="Toggle navigation">
+<i class="ic-loupe"></i>
+</button>
+<a class="navbar-brand" href="/fi/"><img class="img-brand" src="/wp-content/uploads/2019/09/vpnxpert-logo.png" /></a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-m-search" id="navsearch">
+<form class="form-nav-search form-inline" action="/fi/" method="get">
+<button class="btn btn-submit" type="submit"><i class="ic-loupe"></i></button>
+<input id="m-input-search" autocomplete="off" class="form-control input-search" type="text" placeholder="Search" aria-label="Search" name="s" value="">
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navsearch" aria-controls="navsearch" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+</form>
+</div>
+<div class="collapse navbar-collapse" id="navbar-secondary">
+<ul id="menu-top-nav" class="navbar-nav mr-auto ml-auto"><li id="menu-item-1638" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1638"><a href="/fi/paras-vpn/">Paras VPN vuonna 2021</a></li>
+<li id="menu-item-1639" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1639"><a href="/fi/ohjeet-kuinka-katsoa-hulua-yhdysvaltojen-ulkopuolella/">Hulua</a></li>
+<li id="menu-item-1152" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1152"><a href="/fi/vpn-netflixille/">Netflix USA</a></li>
+</ul> <div class="navbar-right">
+<form class="form-nav-search form-inline" action="/fi/" method="get">
+<input id="input-search" autocomplete="off" class="form-control input-search" type="text" placeholder="Search" aria-label="Search" name="s" value="">
+<button class="btn btn-outline-primary" type="submit"><i class="ic"></i></button>
+<label class="btn btn-outline-primary" for="input-search"><i class="ic"></i></label>
+</form>
+<a class="btn btn-outline-primary " href="/fi/paras-vpn/">Parhaat VPN-palveluntarjoajat vuonna 2021</a>
+</div>
+<div class="language-switcher">
+<div class="wpml-ls-statics-shortcode_actions wpml-ls wpml-ls-legacy-dropdown js-wpml-ls-legacy-dropdown">
+<ul>
+<li tabindex="0" class="wpml-ls-slot-shortcode_actions wpml-ls-item wpml-ls-item-fi wpml-ls-current-language wpml-ls-item-legacy-dropdown">
+<a href="#" class="js-wpml-ls-item-toggle wpml-ls-item-toggle">
+<span class="wpml-ls-native">Suomi</span></a>
+<ul class="wpml-ls-sub-menu">
+<li class="wpml-ls-slot-shortcode_actions wpml-ls-item wpml-ls-item-en wpml-ls-first-item">
+<a href="/what-is-vpn/" class="wpml-ls-link">
+<span class="wpml-ls-native" lang="en">English</span></a>
+</li>
+<li class="wpml-ls-slot-shortcode_actions wpml-ls-item wpml-ls-item-no">
+<a href="/no/hva-er-vpn/" class="wpml-ls-link">
+<span class="wpml-ls-native" lang="no">Norsk bokmål</span></a>
+</li>
+<li class="wpml-ls-slot-shortcode_actions wpml-ls-item wpml-ls-item-da">
+<a href="/da/hvad-er-vpn/" class="wpml-ls-link">
+<span class="wpml-ls-native" lang="da">Dansk</span></a>
+</li>
+<li class="wpml-ls-slot-shortcode_actions wpml-ls-item wpml-ls-item-sv">
+<a href="/sv/vad-ar-vpn/" class="wpml-ls-link">
+<span class="wpml-ls-native" lang="sv">Svenska</span></a>
+</li>
+<li class="wpml-ls-slot-shortcode_actions wpml-ls-item wpml-ls-item-de">
+<a href="/de/was-ist-vpn/" class="wpml-ls-link">
+<span class="wpml-ls-native" lang="de">Deutsch</span></a>
+</li>
+<li class="wpml-ls-slot-shortcode_actions wpml-ls-item wpml-ls-item-ja wpml-ls-last-item">
+<a href="/ja/vpnとは/" class="wpml-ls-link">
+<span class="wpml-ls-native" lang="ja">日本語</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</nav>
+<header id="header" class="header header-single">
+<div class="container">
+<div class="header-content">
+<h1>Mikä VPN on? Aloittelijan opas</h1>
+<div class="blog-author">
+<span class="avatar"><img src="https://secure.gravatar.com/avatar/7aedae79aa7842b78367d4312b0504f1?s=96&amp;d=mm&amp;r=g"></span>
+<div class="blog-text">
+<strong>By Kasper Skov Jensen</strong>
+<span class="post-date">Last Updated: 4 marraskuun, 2019</span>
+</div>
+</div>
+</div>
+</div>
+</header>
+<section class="section-row single-content-row">
+<div class="container">
+<div class="single-content">
+<style>                    #joli-toc-wrapper nav#joli-toc.joli-expanded, #joli-toc-wrapper.joli-folded nav#joli-toc.joli-expanded, #joli-toc-wrapper.joli-unfolded nav#joli-toc{padding: 10px !important;}#joli-toc-wrapper nav#joli-toc.joli-expanded li a, #joli-toc-wrapper nav#joli-toc.joli-collapsed li a,#joli-toc-wrapper.joli-folded nav#joli-toc.joli-expanded li a, #joli-toc-wrapper.joli-unfolded nav#joli-toc li a{text-overflow: unset !important;overflow: hidden !important;white-space: normal !important;}#joli-toc-wrapper nav#joli-toc{width: auto !important;}#joli-toc-wrapper nav#joli-toc.joli-collapsed{width: initial !important;}#joli-toc-wrapper nav#joli-toc .title #title-label{text-align: left !important;}#joli-toc-wrapper nav#joli-toc.joli-collapsed .title, #joli-toc-wrapper nav#joli-toc .title{}#joli-toc-wrapper nav#joli-toc.joli-collapsed, #joli-toc-wrapper nav#joli-toc {-webkit-box-shadow: 0 0 10px #e2e2e2 !important;box-shadow: 0 0 10px #e2e2e2 !important;}                    #joli-toc-wrapper.joli-unfolded-ufloating nav#joli-toc ul.joli-nav ul,#joli-toc-wrapper.joli-incontent nav#joli-toc ul.joli-nav ul,#joli-toc-wrapper nav#joli-toc.joli-expanded ul.joli-nav ul {margin: 0 0 0 20px !important;}#joli-toc-wrapper {top: initial !important;bottom: initial !important;margin-left: initial !important;}body.admin-bar #joli-toc-wrapper {top: initial !important;bottom: initial !important;}</style><div id="joli-toc-filler"></div>
+<div id="joli-toc-wrapper" class="joli-folded-incontent joli-folded joli-incontent   joli-smoothscroll">
+<nav id="joli-toc">
+<header id="joli-toc-header">
+<div id="joli-toc-toggle-box" class="toggle-align-left">
+<div id="joli-toc-toggle"><i class="gg-math-plus"></i></div>
+<div id="joli-toc-collapse"><i class="gg-math-minus"></i></div>
+</div>
+</header>
+<ul class="joli-nav" style="display:none;"><li class="item"><a href="#ip" title="Kuka tahansa voi nähdä IP-osoitteesi " class="joli-h2">Kuka tahansa voi nähdä IP-osoitteesi </a></li><li class="item"><a href="#hackers" title="Internet ei koskaan unohda " class="joli-h2">Internet ei koskaan unohda </a></li><li class="item"><a href="#vpn" title="Et ole ruudun takana turvassa " class="joli-h2">Et ole ruudun takana turvassa </a></li><li class="item"><a href="#no-borders" title="VPN tarjoaa turvaa ja anonymiteettiä " class="joli-h2">VPN tarjoaa turvaa ja anonymiteettiä </a></li><li class="item"><a href="#eyes" title="Montako silmää tarkkailee? " class="joli-h2">Montako silmää tarkkailee? </a><ul><li class="subitem"><a href="#5-eyes" title="5 silmää" class="joli-h3">5 silmää</a></li><li class="subitem"><a href="#9-eyes" title=" 9 silmää" class="joli-h3"> 9 silmää</a></li><li class="subitem"><a href="#14-eyes" title=" 14 silmää" class="joli-h3"> 14 silmää</a></li></ul></li><li class="item"><a href="#protection" title="Vahva vai kevyt yksityisyyssuoja " class="joli-h2">Vahva vai kevyt yksityisyyssuoja </a></li><li class="item"><a href="#no-borders" title="Sisältöä ilman rajoja  " class="joli-h2">Sisältöä ilman rajoja </a><ul><li class="subitem"><a href="#tassa-oppaassa" title="Tässä oppaassa" class="joli-h4">Tässä oppaassa</a></li></ul></li></ul> </nav>
+</div>
+<p><strong>Osa tietokoneisiin liittyvist&auml; teknisist&auml; ilmaisuista on todella abstrakteja. N&auml;in ei ole kuitenkaan VPN-ohjelmistojen kohdalla. Selit&auml;mme VPN-palvelun k&auml;ytt&ouml;tarkoituksen.</strong></p>
+<figure class="wp-block-image"><img loading="lazy" width="1000" height="562" src="/wp-content/uploads/2019/02/VPN-beginner.jpg" alt="Mik&auml; VPN on" class="wp-image-2402" srcset="/wp-content/uploads/2019/02/VPN-beginner.jpg 1000w, /wp-content/uploads/2019/02/VPN-beginner-300x169.jpg 300w, /wp-content/uploads/2019/02/VPN-beginner-768x432.jpg 768w, /wp-content/uploads/2019/02/VPN-beginner-555x312.jpg 555w" sizes="(max-width: 1000px) 100vw, 1000px"></figure>
+<div class="wp-block-columns has-2-columns">
+<div class="wp-block-column">
+<hr class="wp-block-separator">
+<p>Internet on laaja verkko toisiinsa kytk&ouml;ksiss&auml; olevia tietokonepalvelimia. VPN on lyhenne sanoista virtual private network tai virtuaalinen erillisverkko ja, p&auml;invastoin kuin kotiverkkosi, se l&ouml;ytyy internetist&auml;. Siit&auml; tulee sana virtuaalinen. Se on erillinen tai yksityinen, koska vain sin&auml; p&auml;&auml;set siihen. </p>
+<h3 id="ip" class="joli-heading">Kuka tahansa voi n&auml;hd&auml; IP-osoitteesi </h3>
+<p>Kaikilla internetiin liitetyill&auml; laitteilla (k&auml;nnyk&ouml;ill&auml;, tietokoneilla, tableteilla jne.) on IP-osoite. Se on tavallaan internet-palveluntarjoajasi (ISP) antama henkil&ouml;llisyystunnus laitteellesi. </p>
+<p>Aivan samoin kuin sosiaaliturvanumeroa k&auml;ytet&auml;&auml;n monissa yhteyksiss&auml;, my&ouml;s laitteen IP-osoite tallentuu nettiin, teetp&auml; siell&auml; melkein mit&auml; hyv&auml;ns&auml;. Niin tapahtuu esimerkiksi joka kerta vieraillessasi jollakin nettisivulla. </p>
+<p>Siksi palveluntarjoajasi p&auml;&auml;see katsomaan, mill&auml; sivustoilla olet k&auml;ynyt &ndash; ja milloin olet niill&auml; vieraillut. </p>
+<h3 id="hackers" class="joli-heading">Internet ei koskaan unohda </h3>
+<p>Teet itsellesi palveluksen pit&auml;m&auml;ll&auml; mieless&auml;, ettei internet unohda koskaan. Kun jokin asia tallennetaan jollekin palvelimelle jossain p&auml;in maailmaa, sit&auml; voi olla mahdotonta poistaa t&auml;ydellisesti &ndash; ja varmistaa, ett&auml; se on poistettu. </p>
+<p>Sama koskee IP-osoitettasi ja sen avulla tallennettua tietoa. Niin ISP-palveluntarjoajasi, viranomaiset kuin muutkin pystyv&auml;t seuraamaan oikeastaan kaikkia j&auml;lki&auml;, joita j&auml;t&auml;t internetiin. </p>
+<p>On olemassa s&auml;&auml;nt&ouml;j&auml; liittyen siihen, kuinka kauan joitakin tietoja saa s&auml;ilytt&auml;&auml;, mutta k&auml;yt&auml;nn&ouml;ss&auml; on mahdotonta tarkistaa, noudatetaanko niit&auml; </p>
+<h3 id="vpn" class="joli-heading">Et ole ruudun takana turvassa </h3>
+<p>Periaatteessa kaikki internetliikenne on salaamatonta. Se tarkoittaa, ett&auml; hakkerit ja muut voivat mahdollisesti saada k&auml;siins&auml; tietoja, joita siirret&auml;&auml;n palvelimien ja laitteesi v&auml;lill&auml;. Sinun tietojesi ja ep&auml;rehellisten ihmisten v&auml;lill&auml; ei ehk&auml; ole palomuuria. </p>
+<h3 id="no-borders" class="joli-heading">VPN tarjoaa turvaa ja anonymiteetti&auml; </h3>
+<p>VPN-yhteys luo ylim&auml;&auml;r&auml;isen suojakerroksen laitteesi ja internetin v&auml;liin. Sen sijaan, ett&auml; laitteesi IP-osoite tallentuisi jonnekin, tallentuukin IP-osoite silt&auml; VPN-palvelimelta, johon olet yhteydess&auml;. Se tarkoittaa, ett&auml; kukaan ei voi seurata internetin k&auml;ytt&ouml;&auml;si, koska sit&auml; ei voida j&auml;ljitt&auml;&auml; sinuun. </p>
+<p>Lis&auml;ksi tiedonv&auml;litys on aina turvallista, sill&auml; tiedot salakoodataan VPN-palvelimen ja internetin v&auml;lill&auml;. Siten esimerkiksi hakkerit eiv&auml;t p&auml;&auml;se niihin k&auml;siksi. Lopuksi, VPN-palvelun avulla et my&ouml;sk&auml;&auml;n ole sidottu maantieteellisiin rajoituksiin. Jos esimerkiksi olet liittyneen&auml; palvelimeen Yhdysvalloissa, loput internetist&auml; n&auml;ytt&auml;&auml; my&ouml;s sijaitsevan fyysisesti USA:ssa. </p>
+<p>Nyt kun tied&auml;t hieman siit&auml;, kuinka VPN toimii, kuinka se suojaa sinua ja yksityisyytt&auml;si, voimme paneutua enemm&auml;n siihen, kuka oikeasti pystyy n&auml;kem&auml;&auml;n, mit&auml; teet netiss&auml;. T&auml;m&auml; vaihtelee eri maissa &ndash; ja sanotaan vaikka n&auml;in: Eurooppa ei suojaa yksityisyytt&auml;si t&auml;ss&auml; yhteydess&auml;. </p>
+<h3 id="eyes" class="joli-heading">Montako silm&auml;&auml; tarkkailee? </h3>
+<p>Tyypillisesti maat voidaan jakaa kolmeen ryhm&auml;&auml;n: 5 silm&auml;&auml;, 9 silm&auml;&auml; 14 silm&auml;&auml; sen mukaan, montako maata kuhunkin ryhm&auml;&auml;n kuuluu, ja samalla monenko silm&auml;n kanssa tiedot internet-k&auml;ytt&auml;ytymisest&auml; jaetaan. </p>
+<h4 id="5-eyes" class="joli-heading">5 silm&auml;&auml;</h4>
+<p>Viidell&auml; maalla, joihin kuuluvat USA, Iso-Britannia, Kanada, Uusi-Seelanti ja Australia, on kattavin tiedonsiirtosopimus. Kyse ei ole vain siit&auml;, kuka katselee pommivideoita ja ostaa suuria m&auml;&auml;ri&auml; lannoitteita, vaan my&ouml;s normaalista internetin arkik&auml;yt&ouml;st&auml;. </p>
+<p>N&auml;iden viiden maan viranomaisilla on laajat rakenteet valvontaa varten ja ne voivat esimerkiksi pyyt&auml;&auml; toisten ryhm&auml;&auml;n kuuluvien maitten tiedustelupalveluita vakoilemaan nime&auml;mi&auml;&auml;n kansalaisia. </p>
+<h4 id="9-eyes" class="joli-heading"> 9 silm&auml;&auml;</h4>
+<p>Tanska, Ranska, Alankomaat ja Norja ty&ouml;skentelev&auml;t l&auml;heisess&auml; tiedonjakoyhteydess&auml; n&auml;iden viiden maan kanssa. N&auml;in voimme puhua yhdeks&auml;st&auml; silm&auml;st&auml;. </p>
+<h4 id="14-eyes" class="joli-heading"> 14 silm&auml;&auml;</h4>
+<p>Valvonta ei kuitenkaan p&auml;&auml;ty t&auml;h&auml;n. N&auml;iden yhdeks&auml;n maan lis&auml;ksi viel&auml; viisi maata lis&auml;&auml; tekee yhteisty&ouml;t&auml; muiden kanssa jakaakseen etup&auml;&auml;ss&auml; asevoimiin liittyv&auml;&auml; tietoa. Ne ovat Ruotsi, Saksa, Belgia, Italia ja Espanja. N&auml;in saamme kokoon 14 maata, jotka jakavat tietoja rajojensa ylitse. </p>
+<h2 id="protection" class="joli-heading">Vahva vai kevyt yksityisyyssuoja </h2>
+<p>Yll&auml; oleva katsaus valottaa v&auml;h&auml;n sit&auml;, kuinka monen maan kanssa tietosi voidaan jakaa, ellet k&auml;yt&auml; VPN-palvelinta. Mutta se paljastaa my&ouml;s jotain hyvin t&auml;rke&auml;&auml; VPN-palveluntarjoajan valinnasta. Jos sinun on pysytt&auml;v&auml; todella anonyymin&auml;, palveluntarjoaja ei saa tallentaa tai paljastaa sinua koskevia tietoja. </p>
+<p>Kuten tied&auml;t, yrityksi&auml; sitovat sen maan lait, joihin ne on rekister&ouml;ity &ndash; ja yksityisyytt&auml; koskevat s&auml;&auml;nn&ouml;t vaihtelevat todella paljon. Jos esimerkiksi valitset yhdysvaltalaisen VPN-palveluntarjoajan, et voi pysy&auml; nimett&ouml;m&auml;n&auml;, koska lain mukaan yrityksen on tallennettava sinusta tietoja ja mahdollisesti annettava sinusta paljon tietoja. </p>
+<p>Toisaalta, jos valitset VPN-palveluntarjoajan sellaisesta maasta, jossa laki takaa, ettei mit&auml;&auml;n lokikirjoja tallenneta viranomaisten tai muitten nuuskittaviksi, voit nukkua y&ouml;si rauhassa ja anonyymisti. </p>
+<div class="wp-block-button"><a class="wp-block-button__link" href="/fi/paras-vpn/"> Mik&auml; VPN on oikea juuri sinulle? Ota selv&auml;&auml; asiasta t&auml;&auml;lt&auml; </a></div>
+<h2 id="no-borders" class="joli-heading">Sis&auml;lt&ouml;&auml; ilman rajoja </h2>
+<p>VPN-palvelun avulla voit ohittaa maantieteelliset rajoitukset. N&auml;ytt&auml;&auml; silt&auml; kuin olisit samassa maassa kuin se VPN-palvelin, johon olet liittyneen&auml;. Niinp&auml; k&auml;yt&ouml;ss&auml;si on vaikkapa <a href="/fi/vpn-netflixille/" target="_blank" rel="noreferrer noopener" aria-label="Amerikan Netflixin (opens in a new tab)">Amerikan Netflixin</a>, jos yhdist&auml;t palvelimeen USA:ssa tai BBC iPlayer yhdist&auml;ess&auml;si brittil&auml;iseen palvelimeen jne. </p>
+<p></p>
+</div>
+<div class="wp-block-column">
+<hr class="wp-block-separator">
+<div class="single-content-nav">
+<div class="content-nav">
+<h4 class="vx-collapse joli-heading" data-target="#guide-nav" id="tassa-oppaassa">T&auml;ss&auml; oppaassa</h4>
+<ul class="guide-nav guide-parent collapse" id="guide-nav">
+<li><a href="#ip">Kuka tahansa voi n&auml;hd&auml; IP-osoitteesi</a></li><li><a href="#hackers">Internet ei koskaan unohda</a></li><li><a href="#vpn">Et ole ruudun takana turvassa</a></li><li><a href="#no-borders">VPN tarjoaa turvaa ja anonymiteetti&auml;</a></li><li><a href="#eyes">Montako silm&auml;&auml; tarkkailee?</a></li><li><a href="#5-eyes">5 silm&auml;&auml;</a></li><li><a href="#9-eyes">9 silm&auml;&auml;</a></li><li><a href="#14-eyes">14 silm&auml;&auml;</a></li><li><a href="#protection">Vahva vai kevyt yksityisyyssuoja</a></li><li><a href="#no-borders">Sis&auml;lt&ouml;&auml; ilman rajoja</a></li> </ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="single-content-footer">
+<div class="blog-author blog-author-top10">
+<div class="blog-author-left">
+<span class="avatar"><img src="https://secure.gravatar.com/avatar/7aedae79aa7842b78367d4312b0504f1?s=96&amp;d=mm&amp;r=g" alt="Kasper Skov Jensen" /></span>
+<div class="blog-text">
+<strong>Kasper Skov Jensen</strong>
+<span class="post-date">Opdateret: 4 marraskuun, 2019</span>
+</div>
+</div>
+</div>
+<div class="blog-foot-share">
+<label>Share</label>
+<ul class="blog-share">
+<li><a target="_blank" class="social st-custom-button" data-network="facebook" data-url="/fi/mika-vpn-on-aloittelijan-opas/"><img src="/wp-content/themes/vpnxpert-acf/assets/img/share-facebook.svg"></a></li>
+<li><a target="_blank" class="social st-custom-button" data-network="twitter" data-url="/fi/mika-vpn-on-aloittelijan-opas/"><img src="/wp-content/themes/vpnxpert-acf/assets/img/share-twitter.svg"></a></li>
+<li><a target="_blank" class="social st-custom-button" data-network="linkedin" data-url="/fi/mika-vpn-on-aloittelijan-opas/"><img src="/wp-content/themes/vpnxpert-acf/assets/img/share-linkedin.svg"></a></li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section class="section-row single-content-row single-content-comment">
+<div class="container">
+<div class="inner-container">
+</div>
+</div>
+</section>
+<section class="section-row single-content-related">
+<div class="container">
+<div class="category-row">
+<div class="row blog-list">
+<div class="col-lg-4 col-md-6 col-blog-item blog-item-sm">
+<a class="blog-list-item" href="/fi/bbc-iplayeria/">
+<div class="blog-ill">
+<img src="/wp-content/uploads/2019/03/london-laptop-mockup-555x312.jpg">
+<img class="portrait" src="/wp-content/uploads/2019/03/london-laptop-mockup-615x562.jpg">
+</div>
+<div class="blog-desc">
+<h4>Näin käytät BBC iPlayeria missä päin maailmaa tahansa</h4>
+<p> Muutama klikkaus ja pystyt striimaamaan kaiken BBC iPlayerista löytyvän vapaan sisällön missä päin maailmaa tahansa. Näin se tapahtuu. Ilmaista sisältöä tarjoava BBC on yksi</p>
+<div class="blog-foot">
+<div class="blog-reactions"><i class="ic ic-reacties"></i><span>0 Reacties</span></div>
+<div class="blog-date"><i class="ic ic-date"></i><span>4 marras 2019</span></div>
+</div>
+</div>
+</a> </div>
+<div class="col-lg-4 col-md-6 col-blog-item blog-item-sm">
+<a class="blog-list-item" href="/fi/miksi-nettiturvallisuutesi-saattaa-olla-vaarassa/">
+<div class="blog-ill">
+<img src="/wp-content/uploads/2019/10/hvad-er-vpn-555x370.jpg">
+<img class="portrait" src="/wp-content/uploads/2019/10/hvad-er-vpn-615x580.jpg">
+</div>
+<div class="blog-desc">
+<h4>Opas: miksi nettiturvallisuutesi saattaa olla vaarassa</h4>
+<p> Me kaikki tiedämme asiasta, mutta useimmiten emme siitä piittaa, tai ajattelemme että kaikki on hyvin. Mutta yhä useampi yritys ja rikollinen käyttää tietojamme. Ennen</p>
+<div class="blog-foot">
+<div class="blog-reactions"><i class="ic ic-reacties"></i><span>0 Reacties</span></div>
+<div class="blog-date"><i class="ic ic-date"></i><span>4 marras 2019</span></div>
+</div>
+</div>
+</a> </div>
+<div class="col-lg-4 col-md-6 col-blog-item blog-item-sm">
+<a class="blog-list-item" href="/fi/paras-vpn-netflixille/">
+<div class="blog-ill">
+<img src="/wp-content/uploads/2019/03/best-vpn-netflix-555x370.jpeg">
+<img class="portrait" src="/wp-content/uploads/2019/03/best-vpn-netflix-615x580.jpeg">
+</div>
+<div class="blog-desc">
+<h4>Top 3: Paras VPN Netflixille</h4>
+<p> Voit käyttää Netflixia muissa maissa valitsemalla oikean VPN:n. Lue, mikä palvelu kannattaa valita. Amerikkalaisille Netflixin tilaajille tarjolla oleva sisältö eroaa</p>
+<div class="blog-foot">
+<div class="blog-reactions"><i class="ic ic-reacties"></i><span>0 Reacties</span></div>
+<div class="blog-date"><i class="ic ic-date"></i><span>4 marras 2019</span></div>
+</div>
+</div>
+</a> </div>
+<div class="col-lg-4 col-md-6 col-blog-item blog-item-sm">
+<a class="blog-list-item" href="/fi/vpn-netflixille/">
+<div class="blog-ill">
+<img src="/wp-content/uploads/2019/03/american-netflix-555x322.jpg">
+<img class="portrait" src="/wp-content/uploads/2019/03/american-netflix-615x580.jpg">
+</div>
+<div class="blog-desc">
+<h4>Kuinka Amerikan Netflixin voi saada</h4>
+<p> Eteesi voi avautua aivan uusi Netflixin maailma vain minuuteissa. Näin saat käyttöösi Amerikan Netflixin. Yhdysvaltalaiset ovat onnekkaita, sillä sieltä Netflixistä löytyy</p>
+<div class="blog-foot">
+<div class="blog-reactions"><i class="ic ic-reacties"></i><span>0 Reacties</span></div>
+<div class="blog-date"><i class="ic ic-date"></i><span>4 marras 2019</span></div>
+</div>
+</div>
+</a> </div>
+<div class="col-lg-4 col-md-6 col-blog-item blog-item-sm">
+<a class="blog-list-item" href="/fi/mika-vpn-on-aloittelijan-opas/">
+<div class="blog-ill">
+<img src="/wp-content/uploads/2019/02/VPN-beginner-555x312.jpg">
+<img class="portrait" src="/wp-content/uploads/2019/02/VPN-beginner-615x562.jpg">
+</div>
+<div class="blog-desc">
+<h4>Mikä VPN on? Aloittelijan opas</h4>
+<p> Osa tietokoneisiin liittyvistä teknisistä ilmaisuista on todella abstrakteja. Näin ei ole kuitenkaan VPN-ohjelmistojen kohdalla. Selitämme VPN-palvelun</p>
+<div class="blog-foot">
+<div class="blog-reactions"><i class="ic ic-reacties"></i><span>0 Reacties</span></div>
+<div class="blog-date"><i class="ic ic-date"></i><span>11 heinä 2019</span></div>
+</div>
+</div>
+</a> </div>
+<div class="col-lg-4 col-md-6 col-blog-item blog-item-sm">
+<a class="blog-list-item" href="/fi/ohjeet-kuinka-katsoa-hulua-yhdysvaltojen-ulkopuolella/">
+<div class="blog-ill">
+<img src="/wp-content/uploads/2019/04/hulu-tv-555x444.jpg">
+<img class="portrait" src="/wp-content/uploads/2019/04/hulu-tv-615x580.jpg">
+</div>
+<div class="blog-desc">
+<h4>Ohjeet: Kuinka katsoa Hulua Yhdysvaltojen ulkopuolella</h4>
+<p> Amerikkalainen striimausjätti on koti uusimmille ja suosituimmille TV-ohjelmille. Näytämme kädestä pitäen kuinka pääset ohjelmiin käsiksi Yhdysvaltojen ulkopuolelta. Mikään ei</p>
+<div class="blog-foot">
+<div class="blog-reactions"><i class="ic ic-reacties"></i><span>0 Reacties</span></div>
+<div class="blog-date"><i class="ic ic-date"></i><span>5 heinä 2019</span></div>
+</div>
+</div>
+</a> </div>
+<div class="col-lg-4 col-md-6 col-blog-item blog-item-sm">
+<a class="blog-list-item" href="/fi/cyberghost-vpn-arvostelu/">
+<div class="blog-ill">
+<img src="/wp-content/uploads/2019/04/ALL-Servers-Connected-CB-555x277.jpg">
+<img class="portrait" src="/wp-content/uploads/2019/04/ALL-Servers-Connected-CB-615x580.jpg">
+</div>
+<div class="blog-desc">
+<h4>CyberGhost VPN arvostelu</h4>
+<p> Kaikki mitä tarvitset VPN:ltä. Ja paljon muuta. VPN-markkinat on yksi kilpailluimmista sektoreista. Lukuisat palveluntarjoajat kilpailevat markkinaosuuksista mutta yksi asia on varma:</p>
+<div class="blog-foot">
+<div class="blog-reactions"><i class="ic ic-reacties"></i><span>0 Reacties</span></div>
+<div class="blog-date"><i class="ic ic-date"></i><span>28 kesä 2019</span></div>
+</div>
+</div>
+</a> </div>
+<div class="col-lg-4 col-md-6 col-blog-item blog-item-sm">
+<a class="blog-list-item" href="/fi/parhaat-ja-ilmaiset-vpn-palvelut/">
+<div class="blog-ill">
+<img src="/wp-content/uploads/2019/04/free-vpn-555x439.jpg">
+<img class="portrait" src="/wp-content/uploads/2019/04/free-vpn-615x580.jpg">
+</div>
+<div class="blog-desc">
+<h4>Parhaat ja ilmaiset VPN-palvelut</h4>
+<p> Suojaa selustasi valitessasi ilmaista VPN:ää. Tarkastelimme luotettavimpia palveluja, jotka eivät myy henkilökohtaisia tietojasi. VPN-palveluja on tarjolla vino pino. Useimmat niistä</p>
+<div class="blog-foot">
+<div class="blog-reactions"><i class="ic ic-reacties"></i><span>0 Reacties</span></div>
+<div class="blog-date"><i class="ic ic-date"></i><span>25 kesä 2019</span></div>
+</div>
+</div>
+</a> </div>
+<div class="col-lg-4 col-md-6 col-blog-item blog-item-sm">
+<a class="blog-list-item" href="/fi/nordvpn-arvostelu/">
+<div class="blog-ill">
+<img src="/wp-content/uploads/2019/05/NordVPN-review-555x369.jpg">
+<img class="portrait" src="/wp-content/uploads/2019/05/NordVPN-review-615x580.jpg">
+</div>
+<div class="blog-desc">
+<h4>NordVPN arvostelu 2021</h4>
+<p> Tarkastelussa NordVPN. VPN on kehittynyt lähivuosina nörttien vaikeakäyttöisestä softasta yleisesti hyväksytyksi työkaluksi anonyymiteetin ja tietojen suojaamiseen verkossa.</p>
+<div class="blog-foot">
+<div class="blog-reactions"><i class="ic ic-reacties"></i><span>0 Reacties</span></div>
+<div class="blog-date"><i class="ic ic-date"></i><span>23 kesä 2019</span></div>
+</div>
+</div>
+</a> </div>
+</div>
+</div>
+</div>
+</section>
+<footer class="footer">
+<div class="container">
+<div class="row">
+<div class="col-5">
+<a class="footer-brand" href="/fi/"><img class="img-brand" src="/wp-content/uploads/2019/09/vpnxpert-logo.png"></a>
+<ul class="nav nav-footer nav-social">
+</ul>
+<div class="copy">
+<p>©vpnexpert.org 2021</p>
+</div>
+</div>
+<div class="col-2">
+<h4>VPN toimittajat</h4>
+<ul id="menu-vpn-toimittajat" class="nav nav-footer"><li id="menu-item-5192" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5192"><a href="/fi/cyberghost-vpn-arvostelu/">CyberGhost VPN arvostelu</a></li>
+<li id="menu-item-5193" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5193"><a href="/fi/nordvpn-arvostelu/">NordVPN arvostelu</a></li>
+</ul> </div>
+<div class="col-2">
+<h4>Artikkeleita</h4>
+<ul id="menu-artikkeleita" class="nav nav-footer"><li id="menu-item-1657" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1657"><a href="/fi/ohjeet-kuinka-katsoa-hulua-yhdysvaltojen-ulkopuolella/">Ohjeet: Kuinka katsoa Hulua Yhdysvaltojen ulkopuolella</a></li>
+<li id="menu-item-5188" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5188"><a href="/fi/vpn-netflixille/">Kuinka Amerikan Netflixin voi saada</a></li>
+<li id="menu-item-5189" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5189"><a href="/fi/mika-vpn-on-aloittelijan-opas/">Mikä VPN on? Aloittelijan opas</a></li>
+<li id="menu-item-5190" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5190"><a href="/fi/bbc-iplayeria/">Näin käytät BBC iPlayeria missä päin maailmaa tahansa</a></li>
+</ul> </div>
+<div class="col-2">
+<h4>Mikä vpnexpert.org on</h4>
+</div>
+<div class="col-12 d-block d-md-none">
+<ul class="nav nav-footer nav-social">
+</ul>
+<div class="copy"></div>
+</div>
+</div>
+</div>
+</footer>
+
+<script src="/wp-content/themes/vpnxpert-acf/assets/js/vendors.js"></script>
+<script src="/wp-content/themes/vpnxpert-acf/assets/js/vpnxpert.js"></script>
+
+
+
+<link rel="stylesheet" type="text/css" href="/wp-content/cache/wpfc-minified/lxw8yo5d/4lvp8.css" media="all" />
+<script type='text/javascript' id='wpjoli-joli-toc-scripts-js-extra'>
+/* <![CDATA[ */
+var joli_toc_vars = {"expands_on":"hover","collapses_on":"hover-off","logo":"https:\/\/vpnexpert.org\/wp-content\/plugins\/joli-table-of-contents\/assets\/public\/img\/wpjoli-logo-linear-small-bw-24px.png","jumpto_offset":"50"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='/wp-content/plugins/joli-table-of-contents/assets/public/js/wpjoli-joli-toc.min.js' id='wpjoli-joli-toc-scripts-js'></script>
+</body>
+
+<!-- /fi/mika-vpn-on-aloittelijan-opas/ by /3.x [XR&CO'2014], Sun, 12 Sep 2021 12:13:35 GMT -->
+</html>
